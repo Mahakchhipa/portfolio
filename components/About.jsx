@@ -45,19 +45,19 @@ const About = () => {
               <div className="flex flex-wrap gap-4">
                 <div className="bg-gray-400 px-4 py-2 rounded-md flex items-center">
                   <span className="font-bold text-blue-800 mr-2 text-lg ">
-                    5+
+                    1+
                   </span>{" "}
                   Years Experience
                 </div>
                 <div className="bg-gray-400 px-4 py-2 rounded-md flex items-center">
                   <span className="font-bold  text-blue-800 mr-2 text-lg">
-                    50+
+                    5+
                   </span>{" "}
                   Projects Completed
                 </div>
                 <div className="bg-gray-400 px-4 py-2 rounded-md flex items-center">
                   <span className="font-bold  text-blue-800 mr-2 text-lg">
-                    20+
+                    8+
                   </span>{" "}
                   Happy Clients
                 </div>

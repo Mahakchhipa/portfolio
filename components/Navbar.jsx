@@ -1,7 +1,7 @@
 import React from 'react'
 import  { useState, useEffect } from 'react';
 import { Menu, X } from "lucide-react";
-
+import logo from "../img/logo.jpg"
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +20,10 @@ const scrollToSection = (id) => {
     <div>
       <nav className="fixed w-full z-10 bg-gray-700 bg-opacity-90 backdrop-blur-sm border-b border-gray-800">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <a href="#" className="text-3xl italic font-bold text-blue-700">
+          {/* <a href="#" className="text-3xl italic font-bold text-blue-700">
             Mahak <span className="text-gray-200"> Chhipa </span>
-          </a>
+          </a> */}
+          <img src={logo} height={80} width={80} alt="logo" />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">

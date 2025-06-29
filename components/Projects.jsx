@@ -7,28 +7,28 @@ import projeactimg2 from "../img/project2.jpg";
 const Projects = () => {
   const projects = [
     {
-      title: "Interactive Dashboard",
+      title: "Techanic Infotech",
       description:
         "A responsive dashboard with real-time data visualization and user analytics.",
       technologies: ["React", "Tailwind CSS", "D3.js", "Firebase"],
       image: projeactimg,
-      link: "#",
+      link: "https://www.techanicinfotech.com/",
     },
     {
-      title: "E-Commerce Platform",
+      title: "Croma Clone Website",
       description:
         "Full-featured online store with payment processing and inventory management.",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       image: projeactimg1,
-      link: "#",
+      link: "https://www.croma.com/",
     },
     {
-      title: "Social Media App",
+      title: "Maid For U ",
       description:
         "Mobile-first social platform with real-time messaging and content sharing.",
       technologies: ["React Native", "GraphQL", "AWS", "Socket.io"],
       image: projeactimg2,
-      link: "#",
+      link: "https://maid-for-u.vercel.app/",
     },
   ];
 
