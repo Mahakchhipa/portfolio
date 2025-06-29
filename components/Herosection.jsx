@@ -48,11 +48,19 @@ const Herosection = () => {
   }, [animatedCounter, isLoading]);
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const element = document.getElementById(sectionId);
+  const navbarHeight = 80;
+
+  if (element) {
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - navbarHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  }
+};
 
   if (isLoading) {
     return (
@@ -98,7 +106,7 @@ const Herosection = () => {
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="px-8 py-3 border border-black font-bold text-lg hover:bg-white hover:text-gray-900 rounded-lg transition-all"
+            className="px-8 py-3 border border-gray-600 text-gray-800 font-bold text-lg hover:bg-white hover:text-gray-900 rounded-lg transition-all"
           >
             Contact Me
           </button>
