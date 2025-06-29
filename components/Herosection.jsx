@@ -101,10 +101,15 @@ const Herosection = () => {
 
 <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
   <button
-    onClick={() => scrollToSection("projects")}
     className="px-8 py-3 bg-blue-600 text-white text-lg font-bold hover:bg-blue-700 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
   >
-    View My Work
+    <a
+      href="/MahakChhipaCV.pdf"
+      download="MahakChhipaCV.pdf"
+      className="block"
+    >
+      Download My CV
+    </a>
   </button>
   <button
     onClick={() => scrollToSection("contact")}
