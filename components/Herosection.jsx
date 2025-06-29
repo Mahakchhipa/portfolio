@@ -76,7 +76,7 @@ const Herosection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden"
+      className="top-14 md:h-screen flex items-center justify-center pt-16 relative overflow-hidden"
     >
       <div className="absolute inset-0 opacity-30">
         <div className="absolute w-64 h-64 rounded-full bg-blue-700 filter blur-3xl opacity-20 animate-blob top-1/4 -left-8"></div>
@@ -88,29 +88,31 @@ const Herosection = () => {
         <div className="inline-block mb-4 px-6 py-2 border text-2xl font-extrabold border-b-cyan-700 rounded-full text-blue-600">
           MERN STACK DEVELOPER
         </div>
-        <h1 className="text-4xl md:text-6xl text-indigo-700 font-bold mb-6 animate-fade-in">
-          {typedText}
-          <span className="animate-blink">|</span>
-        </h1>
-        <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
-          I build end-to-end digital experiences — from intuitive user
-          interfaces to robust backend systems — that live and thrive on the
-          modern web.
-        </p>
-        <div className="flex justify-center space-x-4 animate-fade-in">
-          <button
-            onClick={() => scrollToSection("projects")}
-            className="px-8 py-3 bg-blue-600 text-white text-lg font-bold hover:bg-blue-700 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
-          >
-            View My Work
-          </button>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="px-8 py-3 border border-gray-600 text-gray-800 font-bold text-lg hover:bg-white hover:text-gray-900 rounded-lg transition-all"
-          >
-            Contact Me
-          </button>
-        </div>
+       <h1 className="text-2xl sm:text-4xl md:text-6xl text-indigo-700 font-bold mb-6 animate-fade-in">
+  {typedText}
+  <span className="animate-blink">|</span>
+</h1>
+
+<p className="text-sm sm:text-base md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
+  I build end-to-end digital experiences — from intuitive user
+  interfaces to robust backend systems — that live and thrive on the
+  modern web.
+</p>
+
+<div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in">
+  <button
+    onClick={() => scrollToSection("projects")}
+    className="px-8 py-3 bg-blue-600 text-white text-lg font-bold hover:bg-blue-700 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
+  >
+    View My Work
+  </button>
+  <button
+    onClick={() => scrollToSection("contact")}
+    className="px-8 py-3 border border-gray-600 text-gray-800 font-bold text-lg hover:bg-white hover:text-gray-900 rounded-lg transition-all"
+  >
+    Contact Me
+  </button>
+</div>
       </div>
     </section>
   );

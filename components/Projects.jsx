@@ -39,10 +39,10 @@ const Projects = () => {
           My Projects
         </h2>
         <p className="text-black text-xl font-bold text-center mb-12">
-          Here are some of my recent works. I worked on this projects.
+          Here are some of my recent works. I worked on these projects.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -87,7 +87,7 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="px-6 py-3  border-blue-500 text-blue-700 font-bold hover:bg-blue-500 hover:text-white rounded-2xl border-2 transition-all">
+          <button className="px-6 py-3 border-blue-500 text-blue-700 font-bold hover:bg-blue-500 hover:text-white rounded-2xl border-2 transition-all">
             View All Projects
           </button>
         </div>

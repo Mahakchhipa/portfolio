@@ -13,7 +13,7 @@ const Skills = () => {
   const [animatedCounter, setAnimatedCounter] = useState(0);
   const containerRef = useRef(null);
 
-  // Animate counter from 0 to 100 (or max skill level)
+  // Animate progress bars from 0 to 100%
   useEffect(() => {
     let current = 0;
     const maxLevel = 100;
@@ -29,7 +29,7 @@ const Skills = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Scroll animation logic: Add 'animate-fade-in' when element scrolls into view
+  // Intersection Observer to add fade-in animation on scroll
   useEffect(() => {
     const elements = containerRef.current.querySelectorAll(".animate-on-scroll");
 
@@ -53,10 +53,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section
-      id="skills"
-      ref={containerRef}
-    >
+    <section id="skills" ref={containerRef} className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-blue-600 text-4xl font-bold mb-12 text-center">
           My Skills
@@ -96,12 +93,10 @@ const Skills = () => {
           ].map(({ title, color, letter, delay }) => (
             <div
               key={title}
-              className={`animate-on-scroll opacity-0 transform translate-y-6 transition duration-700`}
+              className="animate-on-scroll opacity-0 transform translate-y-6 transition duration-700"
               style={{ transitionDelay: `${delay}ms` }}
             >
-              <div
-                className={` rounded-lg p-8 text-center hover:text-white hover:bg-blue-600 transition-all cursor-default`}
-              >
+              <div className="rounded-lg p-8 text-center hover:text-white hover:bg-blue-600 transition-all cursor-default">
                 <div
                   className={`w-16 h-16 bg-${color}-900/30 rounded-full flex items-center justify-center mx-auto mb-4`}
                 >
@@ -122,7 +117,7 @@ const Skills = () => {
         </div>
       </div>
 
-      {/* Add fade-in animation styles inline here or in your global CSS */}
+      {/* Inline styles for fade-in animation */}
       <style>{`
         .animate-fade-in {
           opacity: 1 !important;
