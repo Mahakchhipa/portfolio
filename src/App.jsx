@@ -1,9 +1,13 @@
 import React from 'react'
-import Home from '../components/Home'
+
+import Navbar from '../components/Navbar'
+import Herosection from '../components/Herosection'
+
 const App = () => {
   return (
     <div>
-       <Home/>
+       <Navbar/>
+       <Herosection/>
     </div>
   )
 }
