@@ -5,7 +5,7 @@ const Experience = () => {
     {
       company: "REGEX Software Services",
       position: "MERN Stack Developer",
-      period: "Sep 2023 - March 2025",
+      period: " june - july 2025",
       description:
         "Proficient in developing full-stack applications using MongoDB, Express.js, React.js, Redux, Node.js, and Next.js.",
     },

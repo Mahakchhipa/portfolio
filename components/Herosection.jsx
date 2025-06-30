@@ -90,7 +90,7 @@ const Herosection = () => {
         </div>
        <h1 className="text-2xl sm:text-4xl md:text-6xl text-indigo-700 font-bold mb-6 animate-fade-in">
   {typedText}
-  <span className="animate-blink">|</span>
+  {/* <span className="animate-blink">|</span> */}
 </h1>
 
 <p className="text-sm sm:text-base md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
@@ -104,7 +104,7 @@ const Herosection = () => {
     className="px-8 py-3 bg-blue-600 text-white text-lg font-bold hover:bg-blue-700 rounded-lg transition-colors shadow-lg shadow-blue-500/20"
   >
     <a
-      href="/MahakChhipaCV.pdf"
+      href="./public/mahakResume.pdf"
       download="MahakChhipaCV.pdf"
       className="block"
     >
